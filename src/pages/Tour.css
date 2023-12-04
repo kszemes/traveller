@@ -1,0 +1,34 @@
+.tour-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 0 auto;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.tour-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: inherit;
+    z-index: -1;
+}
+
+.tour-holder {
+    max-width: 800px;
+    border: 1px solid white;
+    background-color: wheat;
+    padding: 5px;
+}
+
+.tour-img {
+    width: 100%;
+    object-fit: cover;
+}

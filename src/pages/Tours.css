@@ -1,0 +1,25 @@
+.components-container {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.components-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: inherit;
+    z-index: -1;
+}
+
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, rgb(4, 31, 57), cornflowerblue);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, rgb(4, 31, 57), cornflowerblue);
+}
+
+.components-container {
+    margin: 60px auto 0 auto;
+}
