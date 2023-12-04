@@ -1,5 +1,5 @@
 import './App.css'
-import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
+import {HashRouter, Outlet, Route, Routes} from "react-router-dom";
 import {Background} from "./components/Background.jsx";
 import {Home} from "./pages/Home.jsx";
 import {About} from "./pages/About.jsx";
@@ -11,7 +11,7 @@ import {Tour} from "./pages/Tour.jsx";
 function App() {
 
     return (
-        <BrowserRouter>
+        <HashRouter basename='/'>
             <div className='content'>
                 <Background/>
                 <Navbar/>
@@ -25,7 +25,7 @@ function App() {
                     <Route path='tour/:id' element={<Tour/>}/>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
